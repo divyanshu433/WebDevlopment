@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+        * {
+            font-family: "Roboto", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+            font-variation-settings:
+                "wdth" 100;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: skyblue;
+        }
+
+
+        .items {
+            display: flex;
+            gap: 30px;
+            font-size: 20px;
+        }
+
+        .item {
+            list-style: none;
+        }
+        header{
+            background-color: white;
+            height: 90px;
+            display: flex;
+        }
+
+        .right-section{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            top: 1.5em;
+            gap: 20px;
+            position: absolute;
+            right: 100px;
+
+        }
+        .logo{
+            padding: 10px;
+            position: absolute;
+            left: 100px;
+        }
+
+        .navbar{
+            display: flex;
+            position: relative;
+            left: 30vw;
+            align-self: center;
+        }
+
+        a:hover{
+            color: palevioletred;
+        }
+        a{
+            text-decoration: none;
+            color: blue;
+        }
+        button{
+            background-color: skyblue;
+            padding: 10px;
+            font-weight: 600;
+            border-radius: 10px;
+        }
+
+        button:hover{
+            color: palevioletred;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div>
+            <img class="logo" src="logo.png" alt="logo">
+        </div>
+
+        <nav class="navbar">
+            <ul class="items">
+                <a href="#"><li class="item">Products</li></a>
+                <a href="#"><li class="item">Pricing</li></a>
+                <a href="#"><li class="item">Resources</li></a>
+                <a href="#"><li class="item">Our Company</li></a>
+            </ul>
+        </nav>
+
+        <div class="right-section">
+            <button class="download">DOWNLOAD</button>
+            <div>
+                <img width="40px" class="globe" src="Globe_icon.png" alt="globe">
+            </div>
+            <span class="english">English</span>
+            <div>
+                <img width="40px" class="search" src="search_icon.png" alt="search">
+            </div>
+        </div>
+    </header>
+</body>
+
+</html>

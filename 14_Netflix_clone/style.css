@@ -1,0 +1,460 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+* {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+}
+
+.main {
+    background-image: url(Bg_image.jpg);
+    background-position: center center;
+    background-size: max(1200px, 100vw);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.main .box {
+    background-color: black;
+    filter: opacity(0.7);
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0px;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    max-width: 85vw;
+    margin: auto;
+    height: 100px;
+    justify-content: space-between;
+    position: relative;
+    z-index: 10;
+}
+
+.hero {
+    height: 80%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    z-index: 10;
+    max-width: 70vw;
+    margin: auto;
+    gap: 24px;
+    padding: 25px;
+}
+
+.hero>:first-child {
+    font-weight: 1000;
+    font-size: 56px;
+    text-align: center;
+}
+
+.hero>:nth-child(2) {
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+}
+
+.hero>:nth-child(3) {
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+}
+
+.input_filed {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.rightside {
+    gap: 15px;
+    display: flex;
+}
+
+.rightside>:nth-child(1) {
+    padding: 5px 15px 5px 15px;
+    background-color: #00000069;
+    border-radius: 3px;
+    font-weight: 500;
+    font-size: 15px;
+    border-color: white;
+    border: 1px solid white;
+    color: white;
+    cursor: pointer;
+    ;
+}
+
+.rightside>:nth-child(2) {
+    padding: 5px 15px 5px 15px;
+    background-color: #ed0814;
+    border-radius: 3px;
+    font-weight: 600;
+    border-color: #ed0814;
+    color: white;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.rightside>:nth-child(2):hover {
+    background-color: #c10811;
+    border-color: #c10811;
+}
+
+.btn-red {
+    padding: 10px 25px;
+    font-size: 24px;
+    font-weight: 600;
+    color: white;
+    background-color: #e00611;
+    border-radius: 5px;
+    border-color: #e00611;
+}
+
+.input_field>input {
+    padding: 15px 140px 15px 15px;
+    border-radius: 4px;
+    border-color: grey;
+    background-color: #000000ab;
+    font-size: 16px;
+    border: 1px solid grey;
+    color: white;
+}
+
+.input_field {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.rightside>button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.input_field>button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.input_field>button:hover {
+    background-color: #c10811;
+    border-color: #c10811;
+}
+
+
+.seperation {
+    width: 99vw;
+    height: 5px;
+    background-color: rgb(178, 93, 122);
+    border-top-left-radius: 50% 100%;
+    border-top-right-radius: 50% 100%;
+}
+
+.trend {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 30px;
+    font-weight: 500;
+    color: white;
+    padding: 30px 0px;
+    width: 80vw;
+    margin: auto;
+}
+
+.cointainer {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    width: 80vw;
+    gap: 40px;
+    margin: auto;
+} 
+
+.cointainer>img {
+    width: 200px;
+    border-radius: 5px;
+    transition: transform .2s;
+    cursor: pointer;
+}
+
+.cointainer>img:hover {
+    transform: scale(1.15);
+}
+
+.sep2,
+.sep3 {
+    padding: 40px;
+    color: white;
+    font-size: 30px;
+    font-weight: 500;
+    max-width: 80vw;
+    margin: auto;
+}
+
+section {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 80vw;
+    margin: auto;
+    gap: 15px;
+}
+
+.cont2>.card {
+    background-color: #20101c;
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background: linear-gradient(180deg, #1a1133 0%, #1b0f1a 50%, #0b0b0b 100%);
+}
+
+
+.card>:nth-child(1) {
+    font-size: 25px;
+    font-weight: 600;
+    padding: 10px
+}
+
+.card>:nth-child(2) {
+    font-weight: 400;
+    padding: 10px
+}
+
+.faq .faqbox {
+    transition: all 0.15s ease-out;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    font-size: 24px;
+    font-weight: 500;
+    background-color: #2e2e2e;
+    width: 80vw;
+    margin: auto;
+    height: 70px;
+    cursor: pointer;
+}
+
+.faq .faqbox:hover {
+    background-color: #414141;
+}
+
+.faq {
+    display: flex;
+    flex-direction: column;
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 60px;
+}
+
+.search>:nth-child(1) {
+    font: 16px;
+    color: white;
+}
+
+.search input {
+    padding: 15px 300px 15px 15px;
+    border-radius: 4px;
+    border-color: grey;
+    background-color: #000000ab;
+    font-size: 16px;
+    border: 1px solid grey;
+    color: white;
+}
+
+.search button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.search button:hover {
+    background-color: #c10811;
+    border-color: #c10811;
+}
+
+.contactno {
+    color: #b3b3b3;
+    font-size: 16px;
+    width: 80vw;
+    margin: auto;
+    padding: 40px;
+}
+
+.contactno>a:visited {
+    color: #b3b3b3;
+}
+
+.links {
+    display: grid;
+    width: 80vw;
+    grid-template-columns: repeat(4, ifr);
+    color: #b3b3b3;
+
+}
+
+.links a:visited {
+    color: #b3b3b3;
+}
+
+.engbtn {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 15px 5px 15px;
+    background-color: #00000069;
+    border-radius: 3px;
+    font-weight: 500;
+    font-size: 15px;
+    border-color: white;
+    border: 1px solid white;
+    color: white;
+    cursor: pointer;
+    margin: 40px 0;
+}
+
+.cont {
+    width: 80vw;
+    margin: auto;
+}
+
+.cont div {
+    color: #b3b3b3;
+    padding: 25px 0;
+}
+
+.cont :nth-child(3) {
+    font-size: 13px;
+    padding-bottom: 150px;
+}
+
+
+@media screen and (max-width: 1400px) {
+    .cointainer {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    section {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .hero>:first-child {
+        font-size: 48px;
+    }
+    .cointainer>img {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .navbar {
+        max-width: 90vw;
+    }
+    .hero {
+        max-width: 90vw;
+    }
+    .hero>:first-child {
+        font-size: 32px;
+    }
+
+    .hero>:nth-child(2) {
+        font-size: 18px;
+    }
+
+    .hero>:nth-child(3) {
+        font-size: 14px;
+    }
+    .input_field {
+        flex-direction: column;
+    }
+    .input_field>input {
+        padding: 10px 50px 10px 10px;
+    }
+    .btn-red {
+        font-size: 18px;
+        padding: 10px 20px;
+    }
+    .cointainer {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+    section {
+        grid-template-columns: 1fr;
+    }
+    .card {
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .rightside {
+        gap: 10px;
+    }
+    .rightside>:nth-child(1) {
+        padding: 5px 10px;
+        font-size: 12px;
+    }
+    .rightside>:nth-child(2) {
+        padding: 5px 10px;
+        font-size: 12px;
+    }
+    .cointainer {
+        grid-template-columns: 1fr;
+        gap: 15px;
+        justify-items: center;
+    }
+     .cointainer>img {
+        width: 80%;
+    }
+    .trend, .sep2, .sep3{
+        font-size: 24px;
+        text-align: center;
+        justify-content: center;
+    }
+}

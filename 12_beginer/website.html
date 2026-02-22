@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px 40px 10px 40px;
+        }
+
+        .container ul {
+            display: flex;
+            list-style: none;
+            gap: 34px;
+        }
+
+        .right {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .right>.download {
+            border: 2px solid black;
+            padding: 7px 20px 7px 20px;
+            border-radius: 7px;
+            font-weight: 700;
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo {
+            width: 120px;
+            display: flex;
+            align-items: center;
+        }
+
+        .eng {
+            display: flex;
+            gap: 3px;
+        }
+
+        .logo,
+        li,
+        .download,
+        .eng,
+        .search {
+            cursor: pointer;
+        }
+
+        main {
+            text-align: center;
+        }
+
+        main .heading {
+            font-size: 50px;
+            font-weight: 600;
+            padding: 70px 0 50px 0;
+        }
+
+        main>p {
+            font-size: 24px;
+            padding: 0 280px 35px 280px;
+        }
+
+        .button {
+            border: 2px solid #0bc3e0;
+            background-color: #0bc3e0;
+            font-weight: 700;
+            color: white;
+            padding: 20px;
+            width: 20vw;
+            margin: auto;
+            border-radius: 10px;
+        }
+
+        .button:hover {
+            background-color: #09a6bd;
+            cursor: pointer;
+        }
+
+        .mid img {
+            width: 60px;
+        }
+
+        .mid {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            padding: 60px 300px 0 0px;
+        }
+
+        .dow {
+            font-size: 25px;
+        }
+
+        .mid img {
+            cursor: pointer;
+        }
+
+        .heading img {
+            cursor: pointer;
+        }
+
+        .box {
+            background-color: #f9f9f9;
+            height: 200px;
+            width: 300px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box .lan {
+            font-size: 20px;
+            font-weight: 700;
+            padding: 20px 20px 50px 20px;
+        }
+
+        .box .download {
+            background-color: #5cb85c;
+            color: white;
+            font-weight: 500;
+            padding: 5px 15px 5px 15px;
+            width: 150px;
+            text-align: center;
+            margin: 0 0 10px 0;
+        }
+
+        .box .txt {
+            font-size: 10px;
+        }
+
+        .box a {
+            text-decoration: none;
+        }
+
+        .box a:visited {
+            color: white;
+        }
+
+        .box a:hover {
+            cursor: pointer;
+        }
+
+        .container2 {
+            display: grid;
+            width: 70vw;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 10px;
+            justify-content: center;
+            margin: auto;
+            margin-top: 60px;
+            margin-bottom: 100px;
+        }
+
+        @media screen and (max-width: 1000px) {
+            .container2 {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="logo.png" alt="logo">
+            </div>
+
+            <div class="container">
+                <ul>
+                    <li>Products <img height="16px" src="arrow-down-01-stroke-rounded.svg" alt=""></li>
+                    <li>Pricing <img height="16px" src="arrow-down-01-stroke-rounded.svg" alt=""></li>
+                    <li>Resources <img height="16px" src="arrow-down-01-stroke-rounded.svg" alt=""></li>
+                    <li>Our Company <img height="16px" src="arrow-down-01-stroke-rounded.svg" alt=""></li>
+                </ul>
+            </div>
+
+            <div class="right">
+                <div class="download">DOWNLOAD</div>
+                <div class="eng">
+                    <img src="globe-02-stroke-rounded.svg" alt="web">
+                    <div>English</div>
+                </div>
+
+
+                <div class="search">
+                    <img src="search-01-stroke-rounded.svg" alt="search">
+                </div>
+
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="heading">
+            Download UltraEdit for Windows
+            <img src="Reviews.png" alt="">
+        </div>
+        <p>
+            Download and try UltraEdit before you buy it! This download includes the full Windows version of the text
+            editor.
+        </p>
+
+        <div class="button">
+            DOWNLOAD MAC OR LINUX VERSION
+        </div>
+
+        <div class="mid">
+            <img src="UE_logo_icon_white.png" alt="icon">
+            <div class="dow">Download UltraEdit</div>
+            <div>v2025.0.0.39 (released 2025-08-06) | Latest changes</div>
+        </div>
+
+        <div class="container2">
+            <div class="box">
+                <div class="lan">language</div>
+                <a href="ue_english_64.exe">
+                    <div class="download">Download 64-bit</div>
+                </a>
+                <div class="txt">SHA256</div>
+                <div class="txt">FC88DDOB44CFOA7DE31AE2C413D145E351A</div>
+                <div class="txt">CCA7A6E7DF4A44BC4A34E5184378E</div>
+            </div>
+
+            <div class="box">
+                <div class="lan">language</div>
+                <a href="ue_english_64.exe">
+                    <div class="download">Download 64-bit</div>
+                </a>
+                <div class="txt">SHA256</div>
+                <div class="txt">FC88DDOB44CFOA7DE31AE2C413D145E351A</div>
+                <div class="txt">CCA7A6E7DF4A44BC4A34E5184378E</div>
+            </div>
+
+            <div class="box">
+                <div class="lan">language</div>
+                <a href="ue_english_64.exe">
+                    <div class="download">Download 64-bit</div>
+                </a>
+                <div class="txt">SHA256</div>
+                <div class="txt">FC88DDOB44CFOA7DE31AE2C413D145E351A</div>
+                <div class="txt">CCA7A6E7DF4A44BC4A34E5184378E</div>
+            </div>
+
+            <div class="box">
+                <div class="lan">language</div>
+                <a href="ue_english_64.exe">
+                    <div class="download">Download 64-bit</div>
+                </a>
+                <div class="txt">SHA256</div>
+                <div class="txt">FC88DDOB44CFOA7DE31AE2C413D145E351A</div>
+                <div class="txt">CCA7A6E7DF4A44BC4A34E5184378E</div>
+            </div>
+
+
+            <div class="box">
+                <div class="lan">language</div>
+                <a href="ue_english_64.exe">
+                    <div class="download">Download 64-bit</div>
+                </a>
+                <div class="txt">SHA256</div>
+                <div class="txt">FC88DDOB44CFOA7DE31AE2C413D145E351A</div>
+                <div class="txt">CCA7A6E7DF4A44BC4A34E5184378E</div>
+            </div>
+
+
+            <div class="box">
+                <div class="lan">language</div>
+                <a href="ue_english_64.exe">
+                    <div class="download">Download 64-bit</div>
+                </a>
+                <div class="txt">SHA256</div>
+                <div class="txt">FC88DDOB44CFOA7DE31AE2C413D145E351A</div>
+                <div class="txt">CCA7A6E7DF4A44BC4A34E5184378E</div>
+            </div>
+
+
+            <div class="box">
+                <div class="lan">language</div>
+                <a href="ue_english_64.exe">
+                    <div class="download">Download 64-bit</div>
+                </a>
+                <div class="txt">SHA256</div>
+                <div class="txt">FC88DDOB44CFOA7DE31AE2C413D145E351A</div>
+                <div class="txt">CCA7A6E7DF4A44BC4A34E5184378E</div>
+            </div>
+
+
+            <div class="box">
+                <div class="lan">language</div>
+                <a href="ue_english_64.exe">
+                    <div class="download">Download 64-bit</div>
+                </a>
+                <div class="txt">SHA256</div>
+                <div class="txt">FC88DDOB44CFOA7DE31AE2C413D145E351A</div>
+                <div class="txt">CCA7A6E7DF4A44BC4A34E5184378E</div>
+            </div>
+
+            <div class="box">
+                <div class="lan">language</div>
+                <a href="ue_english_64.exe">
+                    <div class="download">Download 64-bit</div>
+                </a>
+                <div class="txt">SHA256</div>
+                <div class="txt">FC88DDOB44CFOA7DE31AE2C413D145E351A</div>
+                <div class="txt">CCA7A6E7DF4A44BC4A34E5184378E</div>
+            </div>
+
+            <div class="box">
+                <div class="lan">language</div>
+                <a href="ue_english_64.exe">
+                    <div class="download">Download 64-bit</div>
+                </a>
+                <div class="txt">SHA256</div>
+                <div class="txt">FC88DDOB44CFOA7DE31AE2C413D145E351A</div>
+                <div class="txt">CCA7A6E7DF4A44BC4A34E5184378E</div>
+            </div>
+        </div>
+    </main>
+
+</body>
+
+</html>

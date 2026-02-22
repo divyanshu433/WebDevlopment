@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rough Website</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+        * {
+            font-family: "Roboto", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+            font-variation-settings: "wdth" 100;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(214, 214, 214);
+            ;
+        }
+
+        .Navbar {
+            background-color: rgb(79, 79, 79);
+            position: fixed;
+            width: 100vw;
+            top: 0px;
+        }
+
+        .Nav_items {
+            display: flex;
+            gap: 40px;
+            list-style: none;
+            padding: 10px;
+        }
+
+        ul li a {
+            color: aqua;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: plum;
+        }
+
+        .Boxes {
+            background-color: rgb(255, 136, 136);
+            width: 200vh;
+            height: 80vh;
+            margin: 100px auto;
+            display: flex;
+            gap: 10vh;
+        }
+
+        .box {
+            background-color: rgb(123, 121, 241);
+            height: 70vh;
+            width: 70vh;
+            margin: auto auto;
+        }
+
+        .Welcome {
+            border: 2px solid black;
+            margin: 100px;
+            padding: 50px;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 40px;
+            background-color: aqua;
+        }
+
+        .button{
+            height: 100px;
+            width: 100px;
+            background-color: red;
+            border-radius: 100px;
+            margin: 20px;
+            right: 10px;
+            top: 80vh;
+            position: fixed;
+        }
+        footer{
+            background-color: grey;
+            height: 100px;
+            width: auto;
+            margin-top: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="Navbar">
+            <ul class="Nav_items">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="Boxes">
+            <div class="box Box1"></div>
+            <div class="box Box2"></div>
+        </div>
+        <div class="Welcome">
+            <h2>
+                Welcome to My Website
+            </h2>
+        </div>
+    </main>
+
+    <div class="button"></div>
+</body>
+
+</html>
